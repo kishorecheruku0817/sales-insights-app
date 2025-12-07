@@ -1,0 +1,29 @@
+OrderID,OrderDate,CustomerName,Region,Product,Category,Quantity,UnitPrice,TotalAmount,PaymentMethod
+1001,2024-01-05,Alice Johnson,North,Laptop Pro 15,Electronics,2,1200.0,2400.0,Credit Card
+1002,01/06/2024,Bob Smith,South,Wireless Mouse,Electronics,3,25.5,76.5,UPI
+1003,2024/01/07,Charlie,East,Office Chair,Furniture,1,199.99,199.99,Cash
+1004,7 Jan 2024,David Lee,West ,Desk Lamp,Electronics,4,18.75,75.0,Credit Card
+1005,2024-01-08,Eve,NORTH,Standing Desk,Furniture,1,399.0,399.0,Debit Card
+1006,2024-01-09,Frank,south,Noise Cancelling Headphones,Electronics,2,150.0,300.0,Credit Card
+1006,2024-01-09,Frank,south,Noise Cancelling Headphones,Electronics,2,150.0,300.0,Credit Card
+1007,09-01-2024,Grace,East,"Monitor 24""",Electronics,2,199.99,399.98,Credit Card
+1008,2024-01-10,Heidi,West,Keyboard,Electronics,5,30,150,Cash
+1009,10/01/24,Ivan,N/E,Ergonomic Mouse,Electronics,,45.0,,Credit Card
+1010,2024-01-11,Judy,North,Printer,Electronics,1,$129.99,$129.99,Credit Card
+1011,2024-01-11,Mallory,South,Filing Cabinet,Furniture,3,"1,50.00","4,50.00",Bank Transfer
+1012,"11 Jan, 2024",Niaj,East,Laptop Stand,Accessorries,2,35.5,71.0,UPI
+1013,2024-01-12,Olivia,west,Desk Organizer,Accessories,4,12.0,48.0,Credit Card
+1014,2024-13-01,Peggy,East,"Monitor 27""",Electronics,1,279.99,279.99,Credit Card
+1015,,Quentin,North,Laptop Pro 15,Electronics,1,1200.0,1200.0,Credit Card
+1016,2024-01-14,,South,Wireless Mouse,Electronics,2,,,UPI
+1017,2024-01-15,  Rachel  ,East,,Electronics,1,15.0,15.0,Cash
+1018,2024-01-15,Steve,East,Desk Lamp,Electronics,0,18.75,0.0,Credit Card
+1019,15/01/2024,Trent,NORTH ,Standing Desk,Furniture,-1,399.0,-399.0,Debit Card
+1020,2024-01-16,Uma,south ,Office Chair,furniture,two,199.99,,Credit Card
+1021,2024-01-17,Victor,West,Noise Cancelling Headphones,Electronics,1,150,150.00,Credit Card
+1022,2024-01-18,Walter,EAST,"Monitor 24""",Electronics,2,0,0,Credit Card
+1023,18-01-2024,Xavier,North-East,Desk Lamp,Electronics,3,18.75,56.25,Debit Card
+1024,2024-01-19,Yvonne,N/A,Laptop Pro 15,Electronics,,1200,,Credit Card
+1025,2024-01-19,Zack,,Wireless Mouse,Electronics,1,25.5,25.5,Cash
+1026,2024/01/20,Arjun,East,Kids Study Table,Furniture,1,89.99,89.99,Credit Card
+1027,20 Jan 2024,Kishore,NORTH,Laptop Pro 15,Electronics,1,"1,200.00","1,200.00",Credit Card
