@@ -3,7 +3,16 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
-
+def render_footer():
+    st.markdown(
+        """
+        <hr>
+        <div style="text-align:center; font-size: 0.9rem; color: #777;">
+            Built with <b>Passion</b> using Python & Streamlit · <b>By Kishore</b>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 st.set_page_config(
     page_title="CSV Cleaner & Sales Insights",
     layout="wide",
@@ -42,6 +51,7 @@ if page == "Home":
                 file_name="sales_complex_dirty.csv",
                 mime="text/csv",
             )
+    render_footer()
 
 elif page == "Upload & Clean":
     st.title("📤 Upload & Clean Your CSV")
@@ -143,7 +153,9 @@ elif page == "Upload & Clean":
             )
     else:
         st.info("Please upload a CSV file to get started.")
+    render_footer()
 
 elif page == "Insights (coming soon)":
     st.title("📈 Insights Dashboard")
     st.info("We’ll build the Seaborn-based insights dashboard here next.")
+    render_footer()
