@@ -12,6 +12,8 @@ from src.plots.engine.ui_histogram import build_histogram_params
 from src.plots.renderers.histogram import render_histogram
 from src.plots.engine.ui_scatterplot import build_scatterplot_params
 from src.plots.renderers.scatterplot import render_scatterplot
+from src.plots.engine.ui_heatmap import build_heatmap_params
+from src.plots.renderers.heatmap import render_heatmap
 
 
 def render_insights(df: pd.DataFrame):
@@ -24,7 +26,15 @@ def render_insights(df: pd.DataFrame):
 
     plot_type = st.selectbox(
         "Choose plot",
-        ["None", "barplot", "boxplot", "lineplot", "histogram", "scatterplot"],
+        [
+            "None",
+            "barplot",
+            "boxplot",
+            "lineplot",
+            "histogram",
+            "scatterplot",
+            "heatmap",
+        ],
         index=0,
     )
 
@@ -50,3 +60,7 @@ def render_insights(df: pd.DataFrame):
         params = build_scatterplot_params(df)
         if params:
             render_scatterplot(df, params)
+    elif plot_type == "heatmap":
+        params = build_heatmap_params(df)
+        if params:
+            render_heatmap(df, params)
