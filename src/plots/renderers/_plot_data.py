@@ -91,3 +91,13 @@ def boxplot_data(df: pd.DataFrame, x: str, y: str, hue: str | None):
 def histogram_data(df, x: str, hue: str | None):
     cols = [x] + ([hue] if hue else [])
     return df[cols].dropna()
+
+
+def scatterplot_data(
+    df, x: str, y: str, hue: str | None, size: str | None, style: str | None
+):
+    cols = [x, y]
+    for c in (hue, size, style):
+        if c:
+            cols.append(c)
+    return df[cols].dropna()
