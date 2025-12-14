@@ -86,3 +86,8 @@ def boxplot_data(df: pd.DataFrame, x: str, y: str, hue: str | None):
     cols = [x, y] + ([hue] if hue else [])
     out = df[cols].dropna()
     return out
+
+
+def histogram_data(df, x: str, hue: str | None):
+    cols = [x] + ([hue] if hue else [])
+    return df[cols].dropna()
