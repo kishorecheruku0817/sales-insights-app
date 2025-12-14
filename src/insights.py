@@ -10,6 +10,8 @@ from src.plots.renderers.boxplot import render_boxplot
 from src.plots.renderers.lineplot import render_lineplot
 from src.plots.engine.ui_histogram import build_histogram_params
 from src.plots.renderers.histogram import render_histogram
+from src.plots.engine.ui_scatterplot import build_scatterplot_params
+from src.plots.renderers.scatterplot import render_scatterplot
 
 
 def render_insights(df: pd.DataFrame):
@@ -21,7 +23,9 @@ def render_insights(df: pd.DataFrame):
     st.divider()
 
     plot_type = st.selectbox(
-        "Choose plot", ["None", "barplot", "boxplot", "lineplot", "histogram"], index=0
+        "Choose plot",
+        ["None", "barplot", "boxplot", "lineplot", "histogram", "scatterplot"],
+        index=0,
     )
 
     if plot_type == "barplot":
@@ -42,3 +46,7 @@ def render_insights(df: pd.DataFrame):
         params = build_histogram_params(df)
         if params:
             render_histogram(df, params)
+    elif plot_type == "scatterplot":
+        params = build_scatterplot_params(df)
+        if params:
+            render_scatterplot(df, params)
